@@ -1,14 +1,10 @@
 #!/bin/bash
-
-mkdir -p BugBounty/Targets/
 mkdir -p ~/.config && touch ~/.config/starship.toml
-
 mkdir -p ~/.local/bin/
 
 sudo apt install zsh
 sudo apt install fonts-firecode
 curl -sS https://starship.rs/install.sh | sh
-
 
 #---- INSTALL RUST ----#
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
@@ -48,22 +44,8 @@ go install -v github.com/d3mondev/puredns/v2@latest
 go install -v github.com/x90skysn3k/brutespray@latest
 GO111MODULE=on go install -v github.com/jaeles-project/gospider@latest
 
-CGO_ENABLED=1 go install -v github.com/projectdiscovery/katana/cmd/katana@latest
-go install -v github.com/projectdiscovery/asnmap/cmd/asnmap@latest
-go install -v github.com/projectdiscovery/cdncheck/cmd/cdncheck@latest
-go install -v github.com/projectdiscovery/tldfinder/cmd/tldfinder@latest
-go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
-go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
-go install -v github.com/projectdiscovery/cloudlist/cmd/cloudlist@latest
-go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
-go install -v github.com/projectdiscovery/wappalyzergo/cmd/update-fingerprints@latest
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
-go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
-go install -v github.com/xm1k3/cent@latest
+go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+pdtm -ia
 
 go install -v github.com/gwen001/github-subdomains@latest
 go install -v github.com/gwen001/github-endpoints@latest
@@ -93,6 +75,7 @@ cp master-gf-patterns/*.json ~/.gf
 
 #---- NUCLEI TEMPLATES ----#
 cd ../ && mkdir NUCLEI-TEMPLATES && cd NUCLEI-TEMPLATES
+go install -v github.com/xm1k3/cent@latest
 git clone https://github.com/Sachinart/manual-nuclei-templates.git
 git clone https://github.com/N-N33/Community-Nuclei-Templates.git
 git clone https://github.com/freelancermijan/custom-nuclei-templates.git

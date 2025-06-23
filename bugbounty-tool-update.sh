@@ -21,22 +21,8 @@ go install -v github.com/d3mondev/puredns/v2@latest
 go install -v github.com/x90skysn3k/brutespray@latest
 GO111MODULE=on go install -v github.com/jaeles-project/gospider@latest
 
-CGO_ENABLED=1 go install -v github.com/projectdiscovery/katana/cmd/katana@latest
-go install -v github.com/projectdiscovery/asnmap/cmd/asnmap@latest
-go install -v github.com/projectdiscovery/cdncheck/cmd/cdncheck@latest
-go install -v github.com/projectdiscovery/tldfinder/cmd/tldfinder@latest
-go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
-go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
-go install -v github.com/projectdiscovery/cloudlist/cmd/cloudlist@latest
-go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
-go install -v github.com/projectdiscovery/wappalyzergo/cmd/update-fingerprints@latest
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
-go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
-go install -v github.com/xm1k3/cent@latest
+pdtm -ua
+cent update
 
 go install -v github.com/gwen001/github-subdomains@latest
 go install -v github.com/gwen001/github-endpoints@latest
