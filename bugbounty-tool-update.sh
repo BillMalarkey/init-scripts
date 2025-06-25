@@ -16,7 +16,6 @@ go install -v github.com/tomnomnom/gf@latest
 go install -v github.com/tomnomnom/anew@latest
 go install -v github.com/musana/fuzzuli@latest
 go install -v github.com/hakluke/hakrawler@latest
-go install -v github.com/gwen001/github-subdomains@latest
 go install -v github.com/d3mondev/puredns/v2@latest
 go install -v github.com/x90skysn3k/brutespray@latest
 GO111MODULE=on go install -v github.com/jaeles-project/gospider@latest
@@ -27,6 +26,9 @@ cent update
 go install -v github.com/gwen001/github-subdomains@latest
 go install -v github.com/gwen001/github-endpoints@latest
 go install -v github.com/gwen001/gitlab-subdomains@latest
+
+go install -v github.com/g0ldencybersec/gungnir/cmd/gungnir@latest
+go install -v github.com/g0ldencybersec/Caduceus/cmd/caduceus@latest
 
 #---- PYTHON ----#
 python3 -m pip install --upgrade xnLinkfinder
