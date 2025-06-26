@@ -28,6 +28,7 @@ cargo install findomain
 cargo install rustscan
 cargo install jwt-hack
 cargo install urx
+cargo install xh
 
 #---- GO TOOL INSTALL ----#
 go install -v github.com/ffuf/ffuf/v2@latest
